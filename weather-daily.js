@@ -59,7 +59,7 @@ export default class WeatherDaily extends Component {
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
     // Below fetch returns a promies which passed to json() which returns another promies.
     // https://developer.mozilla.org/en-US/docs/Web/API/Body/json
-
+ 
     fetch(path)
       .then((response) => response.json())
       .then((responseJson) => {
@@ -138,7 +138,7 @@ export default class WeatherDaily extends Component {
     return (
       <View style={styles.container}>
         <ScrollView automaticallyAdjustContentInsets={true}>
-          
+
           <Text style={styles.small}>Position: {position}</Text>
           <Text style={styles.huge}>{weather.temp}</Text>
           <Text style={styles.medium}>{weather.cloudCover}</Text>
